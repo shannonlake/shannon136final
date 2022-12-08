@@ -1,13 +1,33 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Shannon's Final Project</title>
-  </head>
-  <body>
-    <div class="">
-      <p>hello shannon</p>
-    </div>
-  </body>
-</html>
+
+<div class="calcbox">
+        <div class="rw-box">
+
+          <label class="left-cell" for="homeval"> Home Value: </label>
+          <input id="homeval" class="right-cell" type="number" step="any" name="param[homevalue]" value="" placeholder="300000" size="10" tabindex="1">
+            <span class="symbol">$</span>
+
+        </div>
+
+        <div class="rw-box">
+          <label class="left-cell" for="downpayment"> Down payment: </label>
+          <input id="downpayment" class="right-cell" type="number" step="any" name="param[downpayment]" value="" placeholder="10000" size="10" tabindex="2">
+          <span class="symbol">$</span>
+        </div>
+
+
+        <div class="rw-box">
+        	<label class="left-cell" for="intrstsrate"> Interest Rate: </label>
+        	<input type="number" step="any" id="intrstsrate" class="right-cell" name="param[interest_rate]" value="" placeholder="2.75" size="4" tabindex="3">
+        	<span class="symbol">%</span>
+        </div>
+
+        <div class="rw-box">
+        	<label class="left-cell" for="loanterm"> Loan Term: </label>
+        	<input id="loanterm" class="right-cell" type="number" step="any" name="param[term]" value="" placeholder="30" size="4" tabindex="4">
+    	    <span class="symbol">years</span>
+        </div>
+
+        <div class="rw-box button">
+          <input type="submit" tabindex="10" value="Calculate" class="styled-button" name="cal">
+        </div>
+</div>
