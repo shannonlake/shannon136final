@@ -10,7 +10,7 @@ fetch("WEEK6_JSON.json")
                       <th>Qtly Pay Avg</th>
                       <th>Paid YTD</th>
                       <th>Tax Rate/1000</th>
-                      <th>Total Value</th></tr>`;
+                      <th>Total Values</th></tr>`;
 
        estRec.forEach(house => {
             ans = house.assessments.land_value + house.assessments.building_value;
@@ -19,7 +19,7 @@ fetch("WEEK6_JSON.json")
             address = house.owner_address.street + "<br>" + house.owner_address.city + "<br>" + house.owner_address.state + ", " + house.owner_address.zip;
             avg = (house.quarter_payments[0] + house.quarter_payments[1] + house.quarter_payments[2] + house.quarter_payments[3])/4;
             li += `<tr>
-                <td>nothing </td>
+                <td>${house.image} </td>
                 <td>${house.parcel} </td>
                 <td>${date}</td>
                 <td>${name}</td>
