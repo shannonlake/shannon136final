@@ -22,8 +22,12 @@ body {
   color: black;
   border-bottom: 3px solid #787878;
 }
-
-
+.subhead {
+  background-color: #008d94;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 20px;
+}
 
 .mainleft
     {
@@ -52,13 +56,6 @@ body {
       font-size: 44px;
       margin: auto;
       font-family: 'Playfair Display', serif;
-    }
-
-    .tophead {
-      background-color: #008d94;
-      text-align: center;
-      padding: 30px;
-      margin-bottom: 20px;
     }
 
     ul {
@@ -92,4 +89,4 @@ body {
     }
     .active:hover{
       background-color: #C10000;
-    }    
+    }
