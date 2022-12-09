@@ -4,12 +4,7 @@ body {
   font-family: 'Questrial', sans-serif;
   margin: 0;
 }
-.tophead {
-  background-color: #008d94;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 20px;
-}
+
 
 #realest {
   background-color: #d1d1d1;
@@ -57,4 +52,11 @@ body {
       font-size: 44px;
       margin: auto;
       font-family: 'Playfair Display', serif;
+    }
+
+    .tophead {
+      background-color: #008d94;
+      text-align: center;
+      padding: 30px;
+      margin-bottom: 20px;
     }
