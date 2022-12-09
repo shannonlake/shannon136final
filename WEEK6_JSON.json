@@ -1,0 +1,44 @@
+[
+                    {
+                     "parcel" : 123456,
+                     "deed_date" : "2022-01-01",
+                     "owner_name" : { "first" : "Joe",
+                                      "last" : "Rice"
+                                    },
+                     "owner_address" :  {   "street": "22 Main Street",
+                                            "city": "New Bedford",
+                                            "state": "MA",
+                                            "zip": 12345
+                                        },
+                     "assessments" :
+                                    {   "land_value": 123000,
+                                        "building_value": 89000
+                                    },
+                    "quarter_payments": [5000, 4599, 5555, 1234],
+                    "paid_YTD": 90000,
+                    "tax_rate_perK": 12
+
+                  },
+
+                  {
+                   "parcel" : 123566,
+                   "deed_date" : "1999-07-09",
+                   "owner_name" : { "first" : "Mary",
+                                    "last" : "Lamb"
+                                  },
+                   "owner_address" :  {   "street": "11 West Lane",
+                                          "city": "Acushnet",
+                                          "state": "MA",
+                                          "zip": 34556
+                                      },
+                   "assessments" :
+                                  {   "land_value": 990000,
+                                      "building_value": 1000456
+                                  },
+                  "quarter_payments": [1000, 9999, 8888, 9998],
+                  "paid_YTD": 120000,
+                  "tax_rate_perK": 98
+
+                }
+
+          ]

@@ -1,13 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Shannon's Final Project</title>
+    <title>GET REAL ESTATE API</title>
+    <style media="screen">
+      body {
+        background-color: #192c38;
+        color: white;
+        font-family: sans-serif;
+      }
+      .tophead {
+        background-color: #008d94;
+        text-align: center;
+        padding: 30px;
+        margin-bottom: 20px;
+      }
+
+      #realest {
+        background-color: #d1d1d1;
+        width: 100%;
+        text-align: center;
+      }
+
+      #realest th {
+        background-color: #43bf71;
+        padding: 5px;
+      }
+
+      #realest td {
+        padding: 12px;
+        color: black;
+        border-bottom: 3px solid #787878;
+      }
+
+
+    </style>
+
+
   </head>
   <body>
-    <div class="">
-      <p>hello shannons</p>
+    <div>
+      <h3 class="tophead">Fetching Real Estate</h3>
+      <table id="realest">
+       </table>
     </div>
+    <script src="realestate.js"></script>
   </body>
 </html>
