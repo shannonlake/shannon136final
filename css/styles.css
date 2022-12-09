@@ -26,3 +26,34 @@ body {
   color: black;
   border-bottom: 3px solid #787878;
 }
+
+
+
+.mainleft
+    {
+     position: fixed;
+     font-size: 24px;
+     top: 0;
+     left: 0;
+     right: 180px;
+     bottom: 0;
+     overflow: auto;
+     background-color: beige;
+     color: brown;
+    }
+
+    .headnav {
+      margin: 0;
+
+    }
+
+    .name{
+      display: block;
+      color: YellowGreen;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      font-size: 44px;
+      margin: auto;
+      font-family: 'Playfair Display', serif;
+    }
