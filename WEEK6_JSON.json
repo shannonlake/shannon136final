@@ -1,5 +1,6 @@
 [
                     {
+                    "image" : "img/house1.jpg",
                      "parcel" : 123456,
                      "deed_date" : "2022-01-01",
                      "owner_name" : { "first" : "Joe",
@@ -21,6 +22,7 @@
                   },
 
                   {
+                  "image" : "img/house2.jpg",
                    "parcel" : 123566,
                    "deed_date" : "1999-07-09",
                    "owner_name" : { "first" : "Mary",
