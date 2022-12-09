@@ -10,7 +10,7 @@ fetch("WEEK6_JSON.json")
                       <th>Qtly Pay Avg</th>
                       <th>Paid YTD</th>
                       <th>Tax Rate/1000</th>
-                      <th>Total Val</th></tr>`;
+                      <th>Total Value</th></tr>`;
 
        estRec.forEach(house => {
             ans = house.assessments.land_value + house.assessments.building_value;
