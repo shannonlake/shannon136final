@@ -24,176 +24,72 @@ body {
 }
 
 
-body {
-  margin: 0;
-  font-family: 'Questrial', sans-serif;
-}
-.headnav {
-  margin: 0;
 
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #232323;
-}
-
-li {
-  margin: 0;
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 36px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #121212;
-}
-
-.active {
-  background-color: YellowGreen;
-  padding: 36px;
-}
-.active:hover{
-  background-color: #C10000;
-}
-
-.name{
-  display: block;
-  color: YellowGreen;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  font-size: 44px;
-  margin: auto;
-  font-family: 'Playfair Display', serif;
-}
-
-table {
-  margin: 50px;
-}
-
-label{
-  font-weight: bold;
-}
-
-.price {
-  font-weight: bolder;
-  font-size: 34px;
-}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin-top: 50px;
-  margin-left: 50px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 24px;
-  color: white;
-  font-size: 24px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Number text*/
-.numbertext {
-  color: #f2f2f2;
-  font-size: 14px;
-  padding: 5px 10px;
-  position: absolute;
-  top: 0;
-  background-color: #232323;
-}
-
-#calculator{
-  margin: 50px;
-  width: 60%
-}
-
-
-#rightside
+.mainleft
     {
-     position: absolute;
-     top: 150px;
+     position: fixed;
+     font-size: 24px;
+     top: 0;
+     left: 0;
+     right: 180px;
      bottom: 0;
-     right: 0;
-     width: 25%;
-     height: 100%;
      overflow: auto;
-     background: YellowGreen;
-     color: white;
-     padding: 20px;
+     background-color: beige;
+     color: brown;
     }
 
-    .mainleft
-      {
-       position: fixed;
-       font-size: 24px;
-       top: 0;
-       left: 0;
-       right: 180px;
-       bottom: 0;
-       overflow: auto;
-       background-color: beige;
-       color: brown;
-      }
+    .headnav {
+      margin: 0;
 
-      .infoForm{
-        background-color: lightgray;
-        padding: 10px;
-      }
+    }
 
+    .name{
+      display: block;
+      color: YellowGreen;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      font-size: 44px;
+      margin: auto;
+      font-family: 'Playfair Display', serif;
+    }
 
+    .tophead {
+      background-color: #008d94;
+      text-align: center;
+      padding: 30px;
+      margin-bottom: 20px;
+    }
 
-      .inputform {
-        width: 95%;
-        padding: 12px;
-      }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #232323;
+    }
 
-      input{
-        margin: 5px;
-      }
+    li {
+      margin: 0;
+      float: left;
+    }
 
-      .submitform {
-        background-color: #232323;
-        color: white;
-        padding: 12px 18px;
-      }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 36px;
+      text-decoration: none;
+    }
 
-      .submitform:hover{
-        background-color: black;
-      }
-#totalPrice {
-  font-size: 36px;
-  font-weight: bold;
-}
+    li a:hover:not(.active) {
+      background-color: #121212;
+    }
+
+    .active {
+      background-color: YellowGreen;
+      padding: 36px;
+    }
+    .active:hover{
+      background-color: #C10000;
+    }    
