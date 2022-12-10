@@ -2,6 +2,7 @@ let ans = 0;
 fetch("WEEK6_JSON.json")
     .then(response => response.json())
     .then(estRec => {
+      let div = `<div></div>`;
 
        estRec.forEach(house => {
             image = house.image;
@@ -10,7 +11,7 @@ fetch("WEEK6_JSON.json")
             name = house.owner_name.first + " " + house.owner_name.last;
             address = house.owner_address.street + "<br>" + house.owner_address.city + "<br>" + house.owner_address.state + ", " + house.owner_address.zip;
             avg = (house.quarter_payments[0] + house.quarter_payments[1] + house.quarter_payments[2] + house.quarter_payments[3])/4;
-            div = `<div>
+            div += `<div>
                 <div><img src="${image}" height="300" width="300"></div>
                 <h3>Parcel ID</h3><p>${house.parcel}</p>
                 <h3>Last Sell Date ID</h3><p>${date}</p>
