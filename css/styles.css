@@ -1,5 +1,5 @@
 /*
-gray: #CACACA
+gray: #f0f0f0
 dark blue: #235278
 mint: #5fd0bc
 beige: #FDF9F4
@@ -55,7 +55,9 @@ body {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #CACACA;
+      background-color: #f0f0f0;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
     }
 
     li {
@@ -95,4 +97,19 @@ body {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
       border-radius: 8px;
+      margin-top: 12px;
+    }
+
+    .houseblock:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .listingbtn {
+    background-color: #235278;
+    color: white;
+    }
+
+    .listingbtn {
+    background-color: #5fd0bc;
+    color: #235278;
     }

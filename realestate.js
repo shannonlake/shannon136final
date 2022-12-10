@@ -2,7 +2,7 @@ let ans = 0;
 fetch("WEEK6_JSON.json")
     .then(response => response.json())
     .then(estRec => {
-      let div = `<div></div>`;
+      let div;
 
        estRec.forEach(house => {
             image = house.image;
@@ -14,14 +14,13 @@ fetch("WEEK6_JSON.json")
             div += `<div class="col houseblock">
                 <div class="housepic"><img src="${image}"></div>
                 <p><strong>Parcel ID:</strong> ${house.parcel}</p>
-                <p><strong>Last Sell Date ID:</strong> ${date}</p>
+                <p><strong>Last Sold:</strong> ${date}</p>
                 <p><strong>Owner Name:</strong> ${name}</p>
-                <p><strong>Address:</strong> ${address}</p>
+                <p>${address}</p>
                 <p><strong>Mort. Est:</strong> ${avg}</p>
-                <p><strong>Beds:</strong> ${house.beds}</p>
-                <p><strong>Baths:</strong> ${house.baths}</p>
+                <p>${house.beds} Beds | ${house.baths} Baths</p>
                 <p><strong>Est. Value:</strong> ${ans}</p>
-                <button class="listingbtn" type="button">View Listing</button>
+                <button class="btn btn-primary listingbtn" type="button">View Listing</button>
             </div>`;
         });
     document.getElementById("realest").innerHTML = div;
