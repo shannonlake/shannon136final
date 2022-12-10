@@ -2,7 +2,7 @@ let ans = 0;
 fetch("WEEK6_JSON.json")
     .then(response => response.json())
     .then(estRec => {
-
+      var div = "";
        estRec.forEach(house => {
             image = house.image;
             ans = house.assessments.land_value + house.assessments.building_value;
