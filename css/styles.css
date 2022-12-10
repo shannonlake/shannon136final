@@ -9,7 +9,6 @@ beige: #FDF9F4
 
 body {
   background-color: #FDF9F4;
-  color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   margin: 0;
@@ -37,7 +36,6 @@ body {
 
     .headnav {
       margin: 0;
-
     }
 
     .name {
@@ -83,6 +81,7 @@ body {
       color: white;
       padding: 36px;
     }
+
     .active:hover{
       background-color: #5fd0bc;
       color: #235278;
@@ -91,4 +90,9 @@ body {
     .housepic img{
       border-radius: 8px;
       width: 100%;
+    }
+    .houseblock {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 8px;
     }
