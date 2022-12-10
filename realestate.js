@@ -21,6 +21,7 @@ fetch("WEEK6_JSON.json")
                 <p><strong>Beds:</strong> ${house.beds}</p>
                 <p><strong>Baths:</strong> ${house.baths}</p>
                 <p><strong>Est. Value:</strong> ${ans}</p>
+                <button class="listingbtn" type="button">View Listing</button>
             </div>`;
         });
     document.getElementById("realest").innerHTML = div;
