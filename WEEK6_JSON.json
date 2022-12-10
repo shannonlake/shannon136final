@@ -16,8 +16,8 @@
                                         "building_value": 89000
                                     },
                     "quarter_payments": [5000, 4599, 5555, 1234],
-                    "paid_YTD": 90000,
-                    "tax_rate_perK": 12
+                    "beds": 4,
+                    "baths": 1
 
                   },
 
@@ -38,8 +38,8 @@
                                       "building_value": 1000456
                                   },
                   "quarter_payments": [1000, 9999, 8888, 9998],
-                  "paid_YTD": 120000,
-                  "tax_rate_perK": 98
+                  "beds": 4,
+                  "baths": 1
 
                 }
 

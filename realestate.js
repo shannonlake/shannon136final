@@ -2,7 +2,7 @@ let ans = 0;
 fetch("WEEK6_JSON.json")
     .then(response => response.json())
     .then(estRec => {
-        let li = `<tr><th>Image</th>
+        let div = `<tr><th>Image</th>
                       <th>Parcel</th>
                       <th>Last Sell Date</th>
                       <th>Owner Name</th>
