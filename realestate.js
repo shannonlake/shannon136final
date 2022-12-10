@@ -12,7 +12,7 @@ fetch("WEEK6_JSON.json")
             address = house.owner_address.street + "<br>" + house.owner_address.city + ", " + house.owner_address.state + ", " + house.owner_address.zip;
             avg = (house.quarter_payments[0] + house.quarter_payments[1] + house.quarter_payments[2] + house.quarter_payments[3])/4;
             div += `<div class="col houseblock">
-                <div class="housepic"><img src="${image}" height="300" width="300"></div>
+                <div class="housepic"><img src="${image}"></div>
                 <p><strong>Parcel ID:</strong> ${house.parcel}</p>
                 <p><strong>Last Sell Date ID:</strong> ${date}</p>
                 <p><strong>Owner Name:</strong> ${name}</p>

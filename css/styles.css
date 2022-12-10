@@ -99,6 +99,7 @@ body {
       background-color: #C10000;
     }
 
-    .housepic {
+    .housepic img{
       border-radius: 8px;
+      width: 100%;
     }
