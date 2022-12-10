@@ -97,3 +97,7 @@ body {
     .active:hover{
       background-color: #C10000;
     }
+
+    .housepic {
+      border-radius: 8px;
+    }
