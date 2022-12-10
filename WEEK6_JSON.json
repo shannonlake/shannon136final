@@ -9,7 +9,7 @@
                      "owner_address" :  {   "street": "12 Nash Road",
                                             "city": "New Bedford",
                                             "state": "MA",
-                                            "zip": 02745
+                                            "zip": "02745"
                                         },
                      "assessments" :
                                     {   "land_value": 123000,
@@ -31,7 +31,7 @@
                    "owner_address" :  {   "street": "1235 North Main Street",
                                           "city": "Acushnet",
                                           "state": "MA",
-                                          "zip": 02743
+                                          "zip": "02743"
                                       },
                    "assessments" :
                                   {   "land_value": 123000,
@@ -53,7 +53,7 @@
                    "owner_address" :  {   "street": "98 Hope Street",
                                           "city": "Fairhaven",
                                           "state": "MA",
-                                          "zip": 02744
+                                          "zip": "02744"
                                       },
                    "assessments" :
                                   {   "land_value": 123000,
@@ -64,27 +64,7 @@
                   "baths": 1
 
                   },
-                  {
-                  "image" : "https://shannonlake.github.io/img/house3.jpg",
-                   "parcel" : 089876,
-                   "deed_date" : "1999-06-13",
-                   "owner_name" : { "first" : "Jason",
-                                    "last" : "Jaxon"
-                                  },
-                   "owner_address" :  {   "street": "19 Windy Lane",
-                                          "city": "Dartmouth",
-                                          "state": "MA",
-                                          "zip": 02747
-                                      },
-                   "assessments" :
-                                  {   "land_value": 123000,
-                                      "building_value": 89000
-                                  },
-                  "quarter_payments": [5000, 4599, 54362, 1234],
-                  "beds": 4,
-                  "baths": 1
-
-                  },
+            
                   {
                   "image" : "https://shannonlake.github.io/img/house4.jpg",
                    "parcel" : 564563,
@@ -95,7 +75,7 @@
                    "owner_address" :  {   "street": "87 Norwood Street",
                                           "city": "Acushnet",
                                           "state": "MA",
-                                          "zip": 02743
+                                          "zip": "02743"
                                       },
                    "assessments" :
                                   {   "land_value": 123000,
@@ -116,7 +96,7 @@
                    "owner_address" :  {   "street": "1234 Nye's Lane",
                                           "city": "Mattapoisett",
                                           "state": "MA",
-                                          "zip": 02345
+                                          "zip": "02345"
                                       },
                    "assessments" :
                                   {   "land_value": 453465,
@@ -138,7 +118,7 @@
                    "owner_address" :  {   "street": "1918 Alligator Lane",
                                           "city": "Swansea",
                                           "state": "MA",
-                                          "zip": 02777
+                                          "zip": "02777"
                                       },
                    "assessments" :
                                   {   "land_value": 4564634,
@@ -160,7 +140,7 @@
                    "owner_address" :  {   "street": "22 Main Street",
                                           "city": "New Bedford",
                                           "state": "MA",
-                                          "zip": 12345
+                                          "zip": "12345"
                                       },
                    "assessments" :
                                   {   "land_value": 342546,
@@ -183,7 +163,7 @@
                    "owner_address" :  {   "street": "11 West Lane",
                                           "city": "Acushnet",
                                           "state": "MA",
-                                          "zip": 34556
+                                          "zip": "34556"
                                       },
                    "assessments" :
                                   {   "land_value": 990000,
