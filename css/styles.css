@@ -1,40 +1,25 @@
 /*
-dark gray: #474747
+gray: #CACACA
 dark blue: #235278
-yellow: #f1d07e
+mint: #5fd0bc
 beige: #FDF9F4
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&display=swap');
 
 body {
   background-color: #FDF9F4;
   color: white;
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   margin: 0;
 }
 
 
 #realest {
-  background-color: #d1d1d1;
   width: 100%;
   text-align: center;
-}
-
-#realest th {
-  background-color: #43bf71;
-  padding: 5px;
-}
-
-#realest td {
-  padding: 12px;
-  color: black;
-  border-bottom: 3px solid #787878;
-}
-.subhead {
-  background-color: #008d94;
-  text-align: center;
-  padding: 30px;
-  margin-bottom: 20px;
+  margin-top: 12px;
 }
 
 .mainleft
@@ -55,15 +40,16 @@ body {
 
     }
 
-    .name{
+    .name {
       display: block;
-      color: YellowGreen;
+      color: #235278;
       text-align: center;
       padding: 14px;
       text-decoration: none;
       font-size: 44px;
       margin: auto;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 900;
     }
 
     ul {
@@ -71,7 +57,7 @@ body {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #232323;
+      background-color: #CACACA;
     }
 
     li {
@@ -81,22 +67,25 @@ body {
 
     li a {
       display: block;
-      color: white;
+      color: #235278;
       text-align: center;
       padding: 36px;
       text-decoration: none;
     }
 
     li a:hover:not(.active) {
-      background-color: #121212;
+      background-color: #235278;
+      color: #FDF9F4;
     }
 
     .active {
-      background-color: YellowGreen;
+      background-color: #235278;
+      color: white;
       padding: 36px;
     }
     .active:hover{
-      background-color: #C10000;
+      background-color: #5fd0bc;
+      color: #235278;
     }
 
     .housepic img{
