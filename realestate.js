@@ -1,5 +1,5 @@
 let ans = 0;
-fetch("WEEK6_JSON.json")
+fetch("houses.json")
     .then(response => response.json())
     .then(estRec => {
       var div = "";
