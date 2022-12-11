@@ -1,14 +1,14 @@
 /*
 gray: #f0f0f0
+light gray: e3e3e3
 dark blue: #235278
 mint: #5fd0bc
-beige: #FDF9F4
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
 body {
-  background-color: #FDF9F4;
+  background-color: #e3e3e3;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   margin: 0;
@@ -34,7 +34,7 @@ body {
      color: brown;
     }
 
-    .headnav {
+    .headnav{
       margin: 0;
     }
 
@@ -55,7 +55,7 @@ body {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #f0f0f0;
+      background-color: blue;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
     }
@@ -75,7 +75,7 @@ body {
 
     li a:hover:not(.active) {
       background-color: #235278;
-      color: #FDF9F4;
+      color: #e3e3e3;
     }
 
     .active {
@@ -99,6 +99,7 @@ body {
       transition: 0.3s;
       border-radius: 8px;
       margin-top: 12px;
+      height: 100%;
     }
 
     .houseblock:hover {
