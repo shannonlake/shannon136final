@@ -99,6 +99,7 @@ body {
       border-radius: 8px;
       margin-top: 12px;
       height: 100%;
+      background-color: white;
     }
 
     .houseblock:hover {
