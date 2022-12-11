@@ -12,8 +12,8 @@
                                             "zip": "02745"
                                         },
                      "assessments" :
-                                    {   "land_value": 123000,
-                                        "building_value": 89000
+                                    {   "land_value": 7879877,
+                                        "building_value": 890000
                                     },
                     "quarter_payments": [5000, 5436, 5555, 1234],
                     "beds": 4,
@@ -34,8 +34,8 @@
                                           "zip": "02743"
                                       },
                    "assessments" :
-                                  {   "land_value": 123000,
-                                      "building_value": 89000
+                                  {   "land_value": 676555,
+                                      "building_value": 76000
                                   },
                   "quarter_payments": [5000, 4599, 6585, 1234],
                   "beds": 3,
@@ -56,15 +56,15 @@
                                           "zip": "02744"
                                       },
                    "assessments" :
-                                  {   "land_value": 123000,
-                                      "building_value": 89000
+                                  {   "land_value": 399000,
+                                      "building_value": 99000
                                   },
                   "quarter_payments": [5000, 53652, 5555, 1234],
                   "beds": 4,
                   "baths": 1
 
                   },
-            
+
                   {
                   "image" : "https://shannonlake.github.io/img/house4.jpg",
                    "parcel" : 564563,
@@ -78,8 +78,8 @@
                                           "zip": "02743"
                                       },
                    "assessments" :
-                                  {   "land_value": 123000,
-                                      "building_value": 89000
+                                  {   "land_value": 234000,
+                                      "building_value": 122000
                                   },
                   "quarter_payments": [5000, 8769, 5555, 33456],
                   "beds": 4,

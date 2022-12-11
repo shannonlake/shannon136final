@@ -12,6 +12,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   margin: 0;
+  height: 100%;
 }
 
 
@@ -30,8 +31,6 @@ body {
      right: 180px;
      bottom: 0;
      overflow: auto;
-     background-color: beige;
-     color: brown;
     }
 
     .headnav{
@@ -55,7 +54,7 @@ body {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: blue;
+      background-color: #e3e3e3;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
     }
