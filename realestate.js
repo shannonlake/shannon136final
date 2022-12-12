@@ -24,13 +24,14 @@ fetch("houses.json")
                 <strong>Mort. Est:</strong> ${avg}</br>
                 ${house.beds} Beds | ${house.baths} Baths</br>
                 <strong>Est. Value: $</strong>${ans}</p>
-                <button class="btn btn-primary listingbtn" type="button" onclick="on()">View Listing</button>
+                <button class="btn btn-primary listingbtn" type="button" onclick="on(this)">View Listing</button>
             </div>
             </div>`;
 
             listinginfo = `
             <div id="listing-info">
-            ${image}
+            <div><img src="${image}"></div>
+            <strong>Owner Name:</strong> ${name}</br>
             </div>
             `
         });
