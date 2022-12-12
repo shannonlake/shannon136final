@@ -22,9 +22,18 @@ fetch("houses.json")
                 <strong>Mort. Est:</strong> ${avg}</br>
                 ${house.beds} Beds | ${house.baths} Baths</br>
                 <strong>Est. Value: $</strong>${ans}</p>
-                <button class="btn btn-primary listingbtn" type="button">View Listing</button>
+                <button class="btn btn-primary listingbtn" type="button" onclick="on()">View Listing</button>
             </div>
             </div>`;
         });
     document.getElementById("realest").innerHTML = div;
+
+    function on() {
+    document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+
 });
