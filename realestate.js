@@ -28,14 +28,14 @@ fetch("houses.json")
                 <button class="btn btn-primary listingbtn" id="${btnid}" type="button" onclick="on()" value="${house.parcel}">View Listing</button>
             </div>
             </div>`;
+
             listinginfo = `
             <div id="${house.parcel}" onclick="off()">
             <div id="listing-info">
             <div><img src="${image}"></div>
             <strong>Owner Name:</strong> ${name}</br>
             </div>
-            </div>
-            `
+            </div>`;
         });
     document.getElementById("realest").innerHTML = div;
     document.getElementById("overlaydivs").innerHTML = listinginfo;
