@@ -31,6 +31,7 @@ body {
      right: 180px;
      bottom: 0;
      overflow: auto;
+     float: left;
     }
 
     .headnav{
@@ -47,8 +48,11 @@ body {
       margin: auto;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
+      float: left;
     }
-
+      .toplink{
+        float: right;
+      }
     ul {
       list-style-type: none;
       margin: 0;
@@ -92,7 +96,10 @@ body {
       border-radius: 8px;
       width: 100%;
       margin-top: 8px;
+      margin-bottom: 8px;
     }
+
+
     .houseblock {
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       transition: 0.3s;
@@ -209,4 +216,31 @@ body {
 .footertext {
   font-size: 2vw;
   margin-top: auto;
+}
+
+
+@media (max-width: 842px) {
+
+  .name {
+    display: block;
+    float: none;
+  }
+
+.headnav {
+  align-items: center;
+}
+
+  li {
+    display: block;
+    float: none;
+    margin: auto;
+  }
+ li a {
+   padding: 12px;
+ }
+
+ .toplink{
+   float: none;
+ }
+
 }
