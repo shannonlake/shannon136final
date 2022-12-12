@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -49,15 +50,31 @@
   }
 
 
-
     </style>
+    <script>
+$(document).ready(function(){
+  $(".hidethis").hide();
+  $("#hide").hide();
+  $("#hide").click(function(){
+    $(".hidethis").slideUp(500);
+    $("#hide").hide();
+    $("#show").fadeIn(500);
+  });
+  $("#show").click(function(){
+    $(".hidethis").slideDown(500);
+    $("#show").hide();
+    $("#hide").show();
+  });
+});
+</script>
+
   </head>
   <body>
 
     <!-- nav -->
       <div class="headnav" class="mainleft">
       <ul>
-        <li class="name">Real Estate New v38</li>
+        <li class="name">Real Estate New v39</li>
         <li style="float:right"><a href="https://shannonlake.github.io/contact.html">Contact</a></li>
         <li style="float:right"><a href="#link1">Link</a></li>
         <li style="float:right"><a href="#link2">Link</a></li>
@@ -70,21 +87,37 @@
     <div class="hero-outer-text">
     </div>
     <div class="hero-text">
-      <h1 style="font-size:4vw; text-shadow: 0.1em 0em .3em black;">Find Your Home</h1>
-      <p style="font-size:2vw; text-shadow: 0.1em 0em .3em black;">A real estate website</p>
+      <h1 style="font-size:6vw; text-shadow: 0.1em 0em .3em black;">Find Your Home</h1>
+      <p style="font-size:4vw; text-shadow: 0.1em 0em .3em black;">A real estate website</p>
       <button class="btn btn-primary listingbtn" onclick="location.href='#realest'" type="button">See Houses</button>
     </div>
   </div>
   <!-- end hero -->
 
+<div class="hidingdiv">
+
+  <div class="hidethis">
+    <p></p>To speak to a Real Estate Agent please call
+    <h4>1-800-867-5309</h4>
+  </div>
+
+  <button class="btn btn-primary hidebtn" id="hide">I don't need an agent</button>
+  <button class="btn btn-primary hidebtn" id="show">I need an agent</button>
+</div>
+
 
     <div>
       <div class="container">
         <div class="row g-2 row-cols-lg-4 row-cols-md-2 row-cols-sm-1" id="realest">
-
         </div>
       </div>
     </div>
+
+    <div class="footer">
+      <p class="footertext">Shannon Lake 2022</p>
+    </div>
+
+
     <script src="realestate.js"></script>
   </body>
 </html>
