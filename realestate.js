@@ -1,6 +1,7 @@
 let value = 0;
 fetch("houses.json")
     .then(response => response.json())
+    .then((data) => console.log(data));
     .then(estRec => {
       var div = "";
       var listinginfo = "";
@@ -24,7 +25,7 @@ fetch("houses.json")
                 <strong>Mort. Est:</strong> ${avg}</br>
                 ${house.beds} Beds | ${house.baths} Baths</br>
                 <strong>Est. Value: $</strong>${ans}</p>
-                <button class="btn btn-primary listingbtn" type="button" onclick="on(this)">View Listing</button>
+                <button class="btn btn-primary listingbtn" type="button" onclick="on(this)" id="${house.parcel}">View Listing</button>
             </div>
             </div>`;
             listinginfo = `
