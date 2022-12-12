@@ -98,7 +98,7 @@ $(document).ready(function(){
     <!-- nav -->
       <div class="headnav" class="mainleft">
       <ul>
-        <li class="name">Real Estate New v65</li>
+        <li class="name">Real Estate New v66</li>
         <div class="toplink">
           <li><a href="https://shannonlake.github.io/contact.html">Contact</a></li>
           <li><a href="#link1">Link</a></li>
@@ -165,16 +165,22 @@ $(document).ready(function(){
 
 
 
-        function on() {
-        var x = $(this).val();
-        alert(x);
-        // document.getElementById(x).style.display = "block";
-        }
+        // function on() {
+        // var x = $(this).val();
+        // alert(x);
+        // // document.getElementById(x).style.display = "block";
+        // }
 
-        function off() {
-          var x = $(this).val();
-          document.getElementById(x).style.display = "none";
-        }
+        $("button").click(function on() {
+            var x = $(this).val();
+            alert(x);
+        });
+
+        //
+        // function off() {
+        //   var x = $(this).val();
+        //   document.getElementById(x).style.display = "none";
+        // }
 
     </script>
   </body>
