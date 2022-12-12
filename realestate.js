@@ -6,7 +6,7 @@ fetch("houses.json")
       var listinginfo = "";
        estRec.forEach(house => {
             ct = 0;
-            btnid = ${house.parcel} + "btn";
+            btnid = house.parcel + "btn";
             image = house.image;
             value = house.assessments.land_value + house.assessments.building_value;
             ans = value.toLocaleString("en-US");
