@@ -27,12 +27,10 @@ fetch("houses.json")
                 <button class="btn btn-primary listingbtn" type="button" onclick="on(this)">View Listing</button>
             </div>
             </div>`;
-            newimage = house[0].image;
-            newname = house[0].owner_name.first + " " + house[0].owner_name.last;
             listinginfo = `
             <div id="listing-info">
-            <div><img src="${newimage}"></div>
-            <strong>Owner Name:</strong> ${newname}</br>
+            <div><img src="${image}"></div>
+            <strong>Owner Name:</strong> ${name}</br>
             </div>
             `
         });
