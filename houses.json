@@ -1,7 +1,7 @@
 [
                     {
                     "image" : "https://shannonlake.github.io/img/house1.jpg",
-                     "parcel" : 123456,
+                     "parcel" : "newid",
                      "deed_date" : "2021-05-16",
                      "owner_name" : { "first" : "Bradford",
                                       "last" : "Lake"
