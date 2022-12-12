@@ -29,7 +29,7 @@ fetch("houses.json")
             </div>
             </div>`;
 
-            listinginfo = `
+            listinginfo += `
             <div id="${house.parcel}" onclick="off()">
             <div id="listing-info">
             <div><img src="${image}"></div>
