@@ -3,6 +3,7 @@ fetch("houses.json")
     .then(response => response.json())
     .then(estRec => {
       var div = "";
+      var listinginfo = "";
        estRec.forEach(house => {
             ct = 0;
             image = house.image;
@@ -26,7 +27,13 @@ fetch("houses.json")
                 <button class="btn btn-primary listingbtn" type="button" onclick="on()">View Listing</button>
             </div>
             </div>`;
-            document.getElementById("listing-info").innerHTML = house[0].image;
+
+            listinginfo = `
+            <div id="listing-info">
+            ${image}
+            </div>
+            `
         });
     document.getElementById("realest").innerHTML = div;
+    document.getElementById("overlay").innerHTML = listinginfo;
 });
