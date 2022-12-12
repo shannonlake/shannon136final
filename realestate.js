@@ -25,7 +25,7 @@ fetch("houses.json")
                 <strong>Mort. Est:</strong> ${avg}</br>
                 ${house.beds} Beds | ${house.baths} Baths</br>
                 <strong>Est. Value: $</strong>${ans}</p>
-                <button class="btn btn-primary listingbtn" id="${btnid}" type="button" value="${house.parcel}">View Listing</button>
+                <button class="btn btn-primary listingbtn" id="${btnid}" type="button" onclick="on(this)" value="${house.parcel}">View Listing</button>
             </div>
             </div>`;
 
