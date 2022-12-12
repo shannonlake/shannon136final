@@ -24,16 +24,19 @@ fetch("houses.json")
                 <strong>Mort. Est:</strong> ${avg}</br>
                 ${house.beds} Beds | ${house.baths} Baths</br>
                 <strong>Est. Value: $</strong>${ans}</p>
-                <button class="btn btn-primary listingbtn" type="button" onclick="on(this)" id="${house.parcel}">View Listing</button>
+                <button class="btn btn-primary listingbtn" type="button" onclick="on(this)" value="${house.parcel}">View Listing</button>
             </div>
             </div>`;
             listinginfo = `
+            <div id="${house.parcel}" class="overlay" onclick="off()">
             <div id="listing-info">
             <div><img src="${image}"></div>
             <strong>Owner Name:</strong> ${name}</br>
             </div>
+            </div>
             `
         });
     document.getElementById("realest").innerHTML = div;
-    document.getElementById("overlay").innerHTML = listinginfo;
+    document.getElementById("overlaydivs").innerHTML = listinginfo;
+
 });
