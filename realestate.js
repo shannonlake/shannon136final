@@ -27,16 +27,9 @@ fetch("houses.json")
                 <button class="btn btn-primary listingbtn" type="button" onclick="on(this)" id="${house.parcel}">View Listing</button>
             </div>
             </div>`;
-
-            function appendData(house) {
-                for (var i = 0; i < house.length; i++) {
-                    var myImage = house[i].image;
-                }
-            }
-
             listinginfo = `
             <div id="listing-info">
-            <div><img src="${myImage}"></div>
+            <div><img src="${image}"></div>
             <strong>Owner Name:</strong> ${name}</br>
             </div>
             `
