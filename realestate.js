@@ -30,8 +30,8 @@ fetch("houses.json")
 
             listinginfo = `
             <div id="listing-info">
-            <div><img src="${image}"></div>
-            <strong>Owner Name:</strong> ${name}</br>
+            <div><img src="${image[0]}"></div>
+            <strong>Owner Name:</strong> ${name[0]}</br>
             </div>
             `
         });
