@@ -1,7 +1,6 @@
 let value = 0;
 fetch("houses.json")
     .then(response => response.json())
-    .then((data) => console.log(data));
     .then(estRec => {
       var div = "";
       var listinginfo = "";
@@ -28,9 +27,16 @@ fetch("houses.json")
                 <button class="btn btn-primary listingbtn" type="button" onclick="on(this)" id="${house.parcel}">View Listing</button>
             </div>
             </div>`;
+
+            function appendData(house) {
+                for (var i = 0; i < house.length; i++) {
+                    var myImage = house[i].image;
+                }
+            }
+
             listinginfo = `
             <div id="listing-info">
-            <div><img src="${image}"></div>
+            <div><img src="${myImage}"></div>
             <strong>Owner Name:</strong> ${name}</br>
             </div>
             `
