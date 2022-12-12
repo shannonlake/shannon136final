@@ -27,4 +27,6 @@ fetch("houses.json")
             </div>`;
         });
     document.getElementById("realest").innerHTML = div;
+    document.getElementById("listing-info").innerHTML = div;
+
 });
