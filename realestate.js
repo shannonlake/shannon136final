@@ -25,8 +25,8 @@ fetch("houses.json")
                 <button class="btn btn-primary listingbtn" type="button" onclick="on()">View Listing</button>
             </div>
             </div>`;
+            document.getElementById("listing-info").innerHTML = div;
+
         });
     document.getElementById("realest").innerHTML = div;
-    document.getElementById("listing-info").innerHTML = div;
-
 });
