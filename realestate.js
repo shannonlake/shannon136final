@@ -4,6 +4,7 @@ fetch("houses.json")
     .then(estRec => {
       var div = "";
        estRec.forEach(house => {
+            ct = 0;
             image = house.image;
             value = house.assessments.land_value + house.assessments.building_value;
             ans = value.toLocaleString("en-US");
@@ -25,8 +26,7 @@ fetch("houses.json")
                 <button class="btn btn-primary listingbtn" type="button" onclick="on()">View Listing</button>
             </div>
             </div>`;
-            document.getElementById("listing-info").innerHTML = div;
-
+            document.getElementById("listing-info").innerHTML = image[0];
         });
     document.getElementById("realest").innerHTML = div;
 });
