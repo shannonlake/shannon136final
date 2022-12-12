@@ -6,6 +6,7 @@ fetch("houses.json")
       var listinginfo = "";
        estRec.forEach(house => {
             ct = 0;
+            btnid = ${house.parcel} + "btn";
             image = house.image;
             value = house.assessments.land_value + house.assessments.building_value;
             ans = value.toLocaleString("en-US");
@@ -24,7 +25,7 @@ fetch("houses.json")
                 <strong>Mort. Est:</strong> ${avg}</br>
                 ${house.beds} Beds | ${house.baths} Baths</br>
                 <strong>Est. Value: $</strong>${ans}</p>
-                <button class="btn btn-primary listingbtn" type="button" onclick="on(this)" value="${house.parcel}">View Listing</button>
+                <button class="btn btn-primary listingbtn" id="${btnid}" type="button" onclick="on()" value="${house.parcel}">View Listing</button>
             </div>
             </div>`;
             listinginfo = `
