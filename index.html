@@ -98,7 +98,7 @@ $(document).ready(function(){
     <!-- nav -->
       <div class="headnav" class="mainleft">
       <ul>
-        <li class="name">Real Estate New v71</li>
+        <li class="name">Real Estate New v72</li>
         <div class="toplink">
           <li><a href="https://shannonlake.github.io/contact.html">Contact</a></li>
           <li><a href="#link1">Link</a></li>
@@ -153,10 +153,12 @@ $(document).ready(function(){
     <script src="realestate.js"></script>
     <script type="text/javascript">
 
-        function on() {
-          var x = $(this).val();
-        alert(x);
-        }
+    $(function(){
+  $("button").click(function() {
+      var fired_button = $(this).val();
+      alert(fired_button);
+  });
+});
 
         // function off() {
         //   var x = document.getElementsByTagName("button").value;
