@@ -243,6 +243,13 @@ body {
   width: 50%;
 }
 
+.inputform {
+width: 100%;
+}
+
+.overlayprice {
+  font-size: 3vw;
+}
 
 
 @media (max-width: 768px) {

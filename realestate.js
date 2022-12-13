@@ -31,9 +31,9 @@ fetch("houses.json")
             <div id="${house.parcel}" class="overlay" onclick="this.style.display='none'">
             <div id="listing-info">
             <div id="overlayimg"><img src="${image}"></div>
-            <p><strong>Parcel ID:</strong> ${house.parcel}</br>
+            <p><span class="overlayprice">$</strong>${ans}<span></br>
+            <strong>Parcel ID:</strong> ${house.parcel}</br>
             <strong>Mort. Est:</strong> ${avg}</br>
-            <strong>Est. Value: $</strong>${ans}
             <strong>Owner Name:</strong> ${name}</br>
             <strong>Last Sold:</strong> ${date}</br>
             </p>
@@ -48,13 +48,11 @@ fetch("houses.json")
                 <input class="inputform" type="text" id="lname" name="lname" placeholder="Last Name"><br>
                 <input class="inputform" type="text" id="phone" name="phone" placeholder="Phone"><br>
                 <input class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
-
-
-                <input class="submitform" type="submit" value="Submit">
+                <input class="btn btn-primary listingbtn" type="submit" value="Submit">
               </form>
               </div>
               </div>
-              </div>`;              
+              </div>`;
         });
     document.getElementById("realest").innerHTML = div;
     document.getElementById("overlaydivs").innerHTML = listinginfo;
