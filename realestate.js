@@ -18,9 +18,11 @@ fetch("houses.json")
                 <div class="col">
                 <div class="col p-3 houseblock">
                 <div class="housepic"><img src="${image}"></div>
+                <div class="housetext">
                 ${address}</br>
                 ${house.beds} Beds | ${house.baths} Baths</br>
                 <strong>$${ans}</strong></p>
+                </div>
                 <button class="btn btn-primary listingbtn" id="${btnid}" type="button" onclick="on(this.value)" value="${house.parcel}">View Listing</button>
             </div>
             </div>`;
