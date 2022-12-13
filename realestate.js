@@ -38,7 +38,7 @@ fetch("houses.json")
             <strong>Last Sold:</strong> ${date}</br>
             </p>
             </div>
-            </div>
+
 
             <div id="rightside">
             <h2>More about this property</h2>
@@ -52,6 +52,7 @@ fetch("houses.json")
 
                 <input class="submitform" type="submit" value="Submit">
               </form>
+              </div>
               </div>
               </div>`;              
         });
