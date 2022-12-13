@@ -18,13 +18,9 @@ fetch("houses.json")
                 <div class="col">
                 <div class="col p-3 houseblock">
                 <div class="housepic"><img src="${image}"></div>
-                <p><strong>Parcel ID:</strong> ${house.parcel}</br>
-                <strong>Last Sold:</strong> ${date}</br>
-                <strong>Owner Name:</strong> ${name}</br>
                 ${address}</br>
-                <strong>Mort. Est:</strong> ${avg}</br>
                 ${house.beds} Beds | ${house.baths} Baths</br>
-                <strong>Est. Value: $</strong>${ans}</p>
+                <strong>$${ans}</strong></p>
                 <button class="btn btn-primary listingbtn" id="${btnid}" type="button" onclick="on(this.value)" value="${house.parcel}">View Listing</button>
             </div>
             </div>`;
@@ -34,6 +30,11 @@ fetch("houses.json")
             <div id="listing-info">
             <div><img src="${image}"></div>
             <strong>Owner Name:</strong> ${name}</br>
+            <p><strong>Parcel ID:</strong> ${house.parcel}</br>
+            <strong>Owner Name:</strong> ${name}</br>
+            <strong>Mort. Est:</strong> ${avg}</br>
+            <strong>Est. Value: $</strong>${ans}</p>
+            <strong>Last Sold:</strong> ${date}</br>
             </div>
             </div>`;
         });
