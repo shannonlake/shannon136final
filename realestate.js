@@ -31,12 +31,12 @@ fetch("houses.json")
             <div id="${house.parcel}" class="overlay" onclick="this.style.display=none">
             <div id="listing-info">
             <div id="overlayimg"><img src="${image}"></div>
-            <strong>Owner Name:</strong> ${name}</br>
             <p><strong>Parcel ID:</strong> ${house.parcel}</br>
-            <strong>Owner Name:</strong> ${name}</br>
             <strong>Mort. Est:</strong> ${avg}</br>
-            <strong>Est. Value: $</strong>${ans}</p>
+            <strong>Est. Value: $</strong>${ans}
+            <strong>Owner Name:</strong> ${name}</br>
             <strong>Last Sold:</strong> ${date}</br>
+            </p>
             </div>
             </div>`;
         });
