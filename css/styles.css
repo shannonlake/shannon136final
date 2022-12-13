@@ -2,7 +2,7 @@
 gray: #f0f0f0
 light gray: e3e3e3
 dark blue: #235278
-mint: #5fd0bc
+mint: #6DEDD6
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
@@ -15,6 +15,9 @@ body {
   height: 100%;
 }
 
+.btn {
+  font-size: 20px;
+}
 
 #realest {
   width: 100%;
@@ -88,7 +91,7 @@ body {
     }
 
     .active:hover{
-      background-color: #5fd0bc;
+      background-color: #6DEDD6;
       color: #235278;
     }
 
@@ -121,7 +124,7 @@ body {
     }
 
     .listingbtn:hover {
-    background-color: #5fd0bc;
+    background-color: #6DEDD6;
     color: #235278;
     border: none;
     }
@@ -195,7 +198,7 @@ body {
     }
 
     .hidebtn:hover {
-    background-color: #5fd0bc;
+    background-color: #6DEDD6;
     color: #235278;
     border: none;
     }
@@ -232,9 +235,8 @@ body {
   width: auto;
   height: auto;
 }
-
-#listing-info {
-  height: 50%;
+#overlayimg{
+  width: 50%;
 }
 
 @media (max-width: 842px) {
@@ -255,6 +257,8 @@ body {
   }
  li a {
    padding: 12px;
+   font-size: 20px;
+
  }
 
  .toplink{
@@ -266,4 +270,5 @@ body {
 .col {
   flex: 100%;
 }
+
 }
