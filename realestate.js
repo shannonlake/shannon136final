@@ -28,7 +28,7 @@ fetch("houses.json")
             </div>`;
 
             listinginfo += `
-            <div id="${house.parcel}" class="overlay" onclick="this.style.display=none">
+            <div id="${house.parcel}" class="overlay" onclick="this.style.display='none'">
             <div id="listing-info">
             <div id="overlayimg"><img src="${image}"></div>
             <p><strong>Parcel ID:</strong> ${house.parcel}</br>
