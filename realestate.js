@@ -38,7 +38,22 @@ fetch("houses.json")
             <strong>Last Sold:</strong> ${date}</br>
             </p>
             </div>
-            </div>`;
+            </div>
+
+            <div id="rightside">
+            <h2>More about this property</h2>
+            <div class="infoForm">
+              <form action="/action_page.php" target="_blank" method="post">
+                <input class="inputform" type="text" id="fname" name="fname" placeholder="First Name"><br>
+                <input class="inputform" type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                <input class="inputform" type="text" id="phone" name="phone" placeholder="Phone"><br>
+                <input class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
+
+
+                <input class="submitform" type="submit" value="Submit">
+              </form>
+              </div>
+              </div>`;              
         });
     document.getElementById("realest").innerHTML = div;
     document.getElementById("overlaydivs").innerHTML = listinginfo;
