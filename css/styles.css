@@ -233,6 +233,10 @@ body {
   height: auto;
 }
 
+#listing-info {
+  height: 50%;
+}
+
 @media (max-width: 842px) {
 
   .name {
