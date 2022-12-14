@@ -303,23 +303,24 @@ border-style: none;
   -ms-transform: translate(-50%,-50%);
 }
 
-#rightside
-    {
-     position: relative;
-     top: 0;
-     bottom: 0;
-     right: 0;
-     height: 100%;
-     overflow: auto;
-     background: white;
-     padding: 20px;
-     color: black;
-     overflow-y: scroll;
-
-    }
 
 #overlaydivs {
 position: absolute;
+}
+
+#overlayimg{
+ width: 80%;
+ margin: auto;
+ max-width: 500px;
+}
+
+.ovtxt{
+}
+
+.ovim {
+ width: 50%;
+ display: block;
+ float: left;
 }
 
 
@@ -360,55 +361,7 @@ position: absolute;
    float: none;
  }
 
- #listing-info{
-   position: absolute;
-   width: 80%;
-   top: 80%;
-   left: 50%;
-   color: black;
-   background-color: white;
-   padding: 20px;
-   transform: translate(-50%,-50%);
-   -ms-transform: translate(-50%,-50%);
- }
 
-
-
-}
-
-#rightside
-   {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    overflow: auto;
-    background: white;
-    padding: 20px;
-    color: black;
-    overflow-y: scroll;
-
-   }
-
-#overlaydivs {
-position: absolute;
-}
-
-#overlayimg{
-  width: 80%;
-  margin: auto;
-  max-width: 500px;
-}
-
-.ovtxt{
-}
-
-.ovim {
-  width: 50%;
-  display: block;
-  float: left;
-}
 
 }
 @media (max-width: 576px) {
@@ -417,3 +370,18 @@ position: absolute;
 }
 
 }
+
+/* #rightside
+    {
+     position: relative;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     height: 100%;
+     overflow: auto;
+     background: white;
+     padding: 20px;
+     color: black;
+     overflow-y: scroll;
+
+    } */
