@@ -89,7 +89,7 @@ $(document).ready(function(){
     <!-- nav -->
       <div class="headnav" class="mainleft">
       <ul>
-        <li class="name">Real Estate New v104</li>
+        <li class="name">Real Estate New v105</li>
         <div class="toplink">
           <li><a href="https://shannonlake.github.io/contact.html">Contact</a></li>
           <li><a href="#link1">Link</a></li>
@@ -153,7 +153,7 @@ $(document).ready(function(){
         window.onclick = function(event) {
             if (event.target.classList.contains('overlay')) {
              for (var index in overlays) {
-              if (typeof overlays[index].style !== 'undefined') overlays[index].style.display = "none";
+              if (typeof overlays[index].style !== 'block') overlays[index].style.display = "none";
              }
             }
         }
