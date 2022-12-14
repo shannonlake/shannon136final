@@ -46,21 +46,6 @@ fetch("houses.json")
             </div>
 
             </p>
-
-
-
-            <div id="rightside" onclick="this.style.display='block'">
-            <h2 class="moreabout">More about this property</h2>
-            <div class="infoForm">
-              <form action="/action_page.php" target="_blank" method="post">
-                <input class="inputform" type="text" id="fname" name="fname" placeholder="First Name"><br>
-                <input class="inputform" type="text" id="lname" name="lname" placeholder="Last Name"><br>
-                <input class="inputform" type="text" id="phone" name="phone" placeholder="Phone"><br>
-                <input class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
-                <input class="btn btn-primary listingbtn" type="submit" value="Submit">
-              </form>
-              </div>
-              </div>
               </div>
               </div>`;
         });
@@ -68,3 +53,17 @@ fetch("houses.json")
     document.getElementById("overlaydivs").innerHTML = listinginfo;
 
 });
+
+// 
+// <div id="rightside" onclick="this.style.display='block'">
+// <h2 class="moreabout">More about this property</h2>
+// <div class="infoForm">
+//   <form action="/action_page.php" target="_blank" method="post">
+//     <input class="inputform" type="text" id="fname" name="fname" placeholder="First Name"><br>
+//     <input class="inputform" type="text" id="lname" name="lname" placeholder="Last Name"><br>
+//     <input class="inputform" type="text" id="phone" name="phone" placeholder="Phone"><br>
+//     <input class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
+//     <input class="btn btn-primary listingbtn" type="submit" value="Submit">
+//   </form>
+//   </div>
+//   </div>
