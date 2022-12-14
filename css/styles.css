@@ -253,6 +253,7 @@ body {
 #overlayimg{
   width: 80%;
   margin: auto;
+  max-width: 500px;
 }
 
 .ovtxt{
@@ -289,6 +290,39 @@ border-style: none;
 .margin {
   border-bottom: 1px solid rgb(209, 209, 213);
 }
+
+#listing-info{
+  position: absolute;
+  width: 80%;
+  top: 80%;
+  left: 50%;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#rightside
+    {
+     position: relative;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     height: 100%;
+     overflow: auto;
+     background: white;
+     padding: 20px;
+     color: black;
+     overflow-y: scroll;
+
+    }
+
+#overlaydivs {
+position: absolute;
+}
+
+
 @media (max-width: 768px) {
 
   .housetext {
@@ -298,7 +332,6 @@ border-style: none;
   .listingbtn {
     display: flex;
   }
-}
 
 
 @media (max-width: 842px) {
@@ -326,6 +359,42 @@ border-style: none;
  .toplink{
    float: none;
  }
+
+ #listing-info{
+   position: absolute;
+   width: 80%;
+   top: 80%;
+   left: 50%;
+   color: black;
+   background-color: white;
+   padding: 20px;
+   transform: translate(-50%,-50%);
+   -ms-transform: translate(-50%,-50%);
+ }
+
+
+
+}
+
+#rightside
+   {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    overflow: auto;
+    background: white;
+    padding: 20px;
+    color: black;
+    overflow-y: scroll;
+
+   }
+
+#overlaydivs {
+position: absolute;
+}
+
 
 }
 @media (max-width: 576px) {
