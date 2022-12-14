@@ -31,9 +31,10 @@ fetch("houses.json")
             <div id="${house.parcel}" class="overlay" onclick="this.style.display='none'">
             <div id="listing-info">
             <div class="overlayname">Real Estate</div>
-            <div id="overlayimg"><img src="${image}"></div>
+            <div id="overlayimg"><img class="ovim" src="${image}"></div>
 
             <div class="margin">
+            <div class="ovtxt">
             <span class="overlayprice">$${ans}</span></br>
             <p>${address}</br>
             ${house.beds} Beds | ${house.baths} Baths</br>
@@ -41,6 +42,7 @@ fetch("houses.json")
             <strong>Mort. Est:</strong> ${avg}</br>
             <strong>Owner Name:</strong> ${name}</br>
             <strong>Last Sold:</strong> ${date}</br>
+            </div>
             </div>
 
             </p>

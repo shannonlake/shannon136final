@@ -251,7 +251,16 @@ body {
   height: auto;
 }
 #overlayimg{
-  width: 50%;
+  width: 80%;
+  margin: auto;
+}
+
+.ovtxt{
+  width: 80%;
+}
+
+.ovim {
+  width: 100%;
 }
 
 .inputform {
