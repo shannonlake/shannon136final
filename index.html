@@ -153,7 +153,7 @@ $(document).ready(function(){
         window.onclick = function(event) {
             if (event.target.classList.contains('overlay')) {
              for (var index in overlays) {
-              overlays[index].style.display = "none";
+              if (typeof overlays[index].style !== 'undefined') overlays[index].style.display = "none";
              }
             }
         }
