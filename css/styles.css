@@ -395,6 +395,20 @@ position: absolute;
 position: absolute;
 }
 
+#overlayimg{
+  width: 80%;
+  margin: auto;
+  max-width: 500px;
+}
+
+.ovtxt{
+}
+
+.ovim {
+  width: 50%;
+  display: block;
+  float: left;
+}
 
 }
 @media (max-width: 576px) {
