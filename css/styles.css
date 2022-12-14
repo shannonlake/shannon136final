@@ -245,6 +245,8 @@ body {
 
 .inputform {
 width: 100%;
+margin-top: 10px;
+padding: 10px;
 }
 
 .overlayprice {
@@ -252,7 +254,13 @@ width: 100%;
   font-weight: 500;
 }
 
+.moreabout {
+  text-align: center;
+}
 
+.margin {
+  border-bottom: 1px solid rgb(209, 209, 213);
+}
 @media (max-width: 768px) {
 
   .housetext {

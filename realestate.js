@@ -28,9 +28,12 @@ fetch("houses.json")
             </div>`;
 
             listinginfo += `
+            <div class="name">Real Estate</div>
             <div id="${house.parcel}" class="overlay" onclick="this.style.display='none'">
             <div id="listing-info">
             <div id="overlayimg"><img src="${image}"></div>
+
+            <div class="margin">
             <span class="overlayprice">$${ans}</span></br>
             <p>${address}</br>
             ${house.beds} Beds | ${house.baths} Baths</br>
@@ -38,12 +41,14 @@ fetch("houses.json")
             <strong>Mort. Est:</strong> ${avg}</br>
             <strong>Owner Name:</strong> ${name}</br>
             <strong>Last Sold:</strong> ${date}</br>
+            </div>
+            
             </p>
 
 
 
             <div id="rightside">
-            <h2>More about this property</h2>
+            <h2 class="moreabout">More about this property</h2>
             <div class="infoForm">
               <form action="/action_page.php" target="_blank" method="post">
                 <input class="inputform" type="text" id="fname" name="fname" placeholder="First Name"><br>
