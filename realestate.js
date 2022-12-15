@@ -23,12 +23,12 @@ fetch("houses.json")
                 ${house.beds} Beds | ${house.baths} Baths</br>
                 <strong>$${ans}</strong></p>
                 </div>
-                <button class="btn btn-primary listingbtn" id="${btnid}" type="button" onclick="on(this.value)" value="${house.parcel}">View Listing</button>
+                <button class="btn btn-primary listingbtn" id="${btnid}" type="button" data-toggle="modal" data-target="#${house.parcel}" value="${house.parcel}">View Listing</button>
             </div>
             </div>`;
             // onclick="this.style.display='none'"  -- add back to overlay
             listinginfo += `
-            <div id="${house.parcel}" class="overlay">
+            <div id="${house.parcel}" class="modal fade" role="dialog">
             <div id="listing-info">
             <div class="overlayname">Real Estate</div>
             <div id="overlayimg"><img class="ovim" src="${image}"></div>
