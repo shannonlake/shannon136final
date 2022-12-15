@@ -88,7 +88,7 @@ $(document).ready(function(){
     <!-- nav -->
       <div class="headnav" class="mainleft">
       <ul>
-        <li class="name">Real Estate New v109</li>
+        <li class="name">Real Estate New v110</li>
         <div class="toplink">
           <li><a href="https://shannonlake.github.io/contact.html">Contact</a></li>
           <li><a href="#link1">Link</a></li>
@@ -147,13 +147,23 @@ $(document).ready(function(){
           document.getElementById(val).style.display = "block";
         }
 
-        function off(id) {
-          window.onclick = function(event) {
-         if (event.target.id != id) {
-            $(id).hide();
-         }
-      }
-        }
+
+
+
+        document.addEventListener("click", function(event) {
+            // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+            if (!event.target.closest(".overlay")
+             {
+              closeOverlay()
+            }
+          },
+          false
+          )
+
+          function closeOverlay() {
+          document.querySelector(".overlayl").style.display = "none"
+          }
+
 
 
 
