@@ -20,8 +20,7 @@ body {
 }
 
 #realest {
-  width: 100%;
-  /* text-align: center; */
+
   margin-top: 12px;
 }
 
@@ -93,17 +92,23 @@ body {
     li a:hover:not(.active) {
       background-color: #235278;
       color: #e3e3e3;
+      text-decoration: none;
+
     }
 
     .active {
       background-color: #235278;
       color: white;
       padding: 36px;
+      text-decoration: none;
+
     }
 
     .active:hover{
       background-color: #6DEDD6;
       color: #235278;
+      text-decoration: none;
+
     }
 
     .housepic img{
@@ -352,6 +357,10 @@ position: absolute;
     padding: 4rem!important;
   }
 
+  #realest {
+margin: 20px;
+  }
+
 @media (max-width: 842px) {
 
   .name {
@@ -388,6 +397,22 @@ position: absolute;
 .px-2 {
   padding: 1rem!important;
 }
+.modal-dialog{
+  max-width: none;
+}
+
+.listingbtn{
+  display: block;
+  margin: auto;
+  float:none;
+}
+
+.housetext {
+  float:none;
+  display: block;
+  text-align: center;
+}
+
 }
 
 /* #rightside
