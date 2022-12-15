@@ -89,7 +89,7 @@ $(document).ready(function(){
     <!-- nav -->
       <div class="headnav" class="mainleft">
       <ul>
-        <li class="name">Real Estate New v106</li>
+        <li class="name">Real Estate New v107</li>
         <div class="toplink">
           <li><a href="https://shannonlake.github.io/contact.html">Contact</a></li>
           <li><a href="#link1">Link</a></li>
@@ -148,15 +148,15 @@ $(document).ready(function(){
           document.getElementById(val).style.display = "block";
         }
 
-        var overlays = document.querySelectorAll('.overlay');
 
-        window.onclick = function(event) {
-            if (event.target.classList.contains('overlay')) {
-             for (var index in overlays) {
-              if (typeof overlays[index].style !== 'undefined') overlays[index].style.display = "none";
-             }
-            }
-        }
+
+                  var overlays = document.querySelectorAll('.overlay');
+
+                  window.onclick = function(event) {
+                    if (event.target == overlays) {
+                      overlays.style.display = "none";
+                    }
+                  }
 
     </script>
   </body>
