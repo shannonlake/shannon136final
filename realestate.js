@@ -49,6 +49,21 @@ fetch("houses.json")
                   <strong>Last Sold:</strong> ${date}</br>
                   </p>
                   </div>
+
+                  <div id="rightside">
+                  <h2 class="moreabout">More about this property</h2>
+                  <div class="infoForm">
+                    <form action="/action_page.php" target="_blank" method="post">
+                      <input class="inputform" type="text" id="fname" name="fname" placeholder="First Name"><br>
+                      <input class="inputform" type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                      <input class="inputform" type="text" id="phone" name="phone" placeholder="Phone"><br>
+                      <input class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
+                      <input class="btn btn-primary listingbtn" type="submit" value="Submit">
+                    </form>
+                    </div>
+                    </div>
+
+
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -56,19 +71,6 @@ fetch("houses.json")
                 </div>
               </div>
 
-
-              <div id="rightside">
-              <h2 class="moreabout">More about this property</h2>
-              <div class="infoForm">
-                <form action="/action_page.php" target="_blank" method="post">
-                  <input class="inputform" type="text" id="fname" name="fname" placeholder="First Name"><br>
-                  <input class="inputform" type="text" id="lname" name="lname" placeholder="Last Name"><br>
-                  <input class="inputform" type="text" id="phone" name="phone" placeholder="Phone"><br>
-                  <input class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
-                  <input class="btn btn-primary listingbtn" type="submit" value="Submit">
-                </form>
-                </div>
-                </div>
 
 
 
