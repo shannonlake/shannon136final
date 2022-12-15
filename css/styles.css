@@ -258,6 +258,7 @@ body {
 
 .ovtxt{
   width: 80%;
+  margin:
 }
 
 .ovim {
@@ -318,7 +319,6 @@ position: absolute;
 }
 
 .ovim {
- width: 50%;
  display: block;
  float: left;
 }
