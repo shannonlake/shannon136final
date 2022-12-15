@@ -29,33 +29,26 @@ fetch("houses.json")
             // onclick="this.style.display='none'"  -- add back to overlay
             listinginfo += `
             <div id="${house.parcel}" class="modal fade" role="dialog">
+            
+            <div id="listing-info">
+            <div class="overlayname">Real Estate</div>
+            <div id="overlayimg"><img class="ovim" src="${image}"></div>
 
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title overlayname">Real Estate</h4>
-                </div>
-                <div class="modal-body">
-                <div id="overlayimg"><img class="ovim" src="${image}"></div>
+            <div class="margin">
+            <div class="ovtxt">
+            <span class="overlayprice">$${ans}</span></br>
+            <p>${address}</br>
+            ${house.beds} Beds | ${house.baths} Baths</br>
+            <strong>Parcel ID:</strong> ${house.parcel}</br>
+            <strong>Mort. Est:</strong> ${avg}</br>
+            <strong>Owner Name:</strong> ${name}</br>
+            <strong>Last Sold:</strong> ${date}</br>
+            </div>
+            </div>
 
-
-                <div class="ovtxt">
-                <span class="overlayprice">$${ans}</span></br>
-                <p>${address}</br>
-                ${house.beds} Beds | ${house.baths} Baths</br>
-                <strong>Parcel ID:</strong> ${house.parcel}</br>
-                <strong>Mort. Est:</strong> ${avg}</br>
-                <strong>Owner Name:</strong> ${name}</br>
-                <strong>Last Sold:</strong> ${date}</br>
-                </div>
-
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+            </p>
               </div>
-            </div>`;
+              </div>`;
         });
     document.getElementById("realest").innerHTML = div;
     document.getElementById("overlaydivs").innerHTML = listinginfo;
