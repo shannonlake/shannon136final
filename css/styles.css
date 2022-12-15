@@ -144,6 +144,19 @@ body {
     border: none;
     }
 
+    .findbtn {
+      background-color: #235278;
+      color: white;
+      border: none;
+      margin-bottom: 6px;
+    }
+
+    .findbtn:hover {
+    background-color: #6DEDD6;
+    color: #235278;
+    border: none;
+    }
+
     /* contact page */
 
     .contactform {
@@ -328,12 +341,16 @@ position: absolute;
 
   .housetext {
     display: flex;
+    float: left;
   }
 
-  .listingbtn {
+  .listingbtn{
     display: flex;
+    float: right;
   }
-}
+  .px-2 {
+    padding: 4rem!important;
+  }
 
 @media (max-width: 842px) {
 
@@ -368,7 +385,9 @@ position: absolute;
 .col {
   flex: 100%;
 }
-
+.px-2 {
+  padding: 1rem!important;
+}
 }
 
 /* #rightside

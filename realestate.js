@@ -19,9 +19,11 @@ fetch("houses.json")
                 <div class="col p-3 houseblock">
                 <div class="housepic"><img src="${image}"></div>
                 <div class="housetext">
+                <p>
+                <span class="overlayprice">$${ans}</span></br>
                 ${address}</br>
                 ${house.beds} Beds | ${house.baths} Baths</br>
-                <strong>$${ans}</strong></p>
+                </p>
                 </div>
                 <button class="btn btn-primary listingbtn" id="${btnid}" type="button" data-toggle="modal" data-target="#${house.parcel}" value="${house.parcel}">View Listing</button>
             </div>
@@ -53,23 +55,27 @@ fetch("houses.json")
                   </div>
                 </div>
               </div>
-              </div>`;
+              </div>
+
+
+              <div id="rightside">
+              <h2 class="moreabout">More about this property</h2>
+              <div class="infoForm">
+                <form action="/action_page.php" target="_blank" method="post">
+                  <input class="inputform" type="text" id="fname" name="fname" placeholder="First Name"><br>
+                  <input class="inputform" type="text" id="lname" name="lname" placeholder="Last Name"><br>
+                  <input class="inputform" type="text" id="phone" name="phone" placeholder="Phone"><br>
+                  <input class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
+                  <input class="btn btn-primary listingbtn" type="submit" value="Submit">
+                </form>
+                </div>
+                </div>
+
+
+
+                `;
         });
     document.getElementById("realest").innerHTML = div;
     document.getElementById("overlaydivs").innerHTML = listinginfo;
 
 });
-
-//
-// <div id="rightside" onclick="this.style.display='block'">
-// <h2 class="moreabout">More about this property</h2>
-// <div class="infoForm">
-//   <form action="/action_page.php" target="_blank" method="post">
-//     <input class="inputform" type="text" id="fname" name="fname" placeholder="First Name"><br>
-//     <input class="inputform" type="text" id="lname" name="lname" placeholder="Last Name"><br>
-//     <input class="inputform" type="text" id="phone" name="phone" placeholder="Phone"><br>
-//     <input class="inputform" type="text" id="email" name="email" placeholder="Email"><br><br>
-//     <input class="btn btn-primary listingbtn" type="submit" value="Submit">
-//   </form>
-//   </div>
-//   </div>
