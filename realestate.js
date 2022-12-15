@@ -55,7 +55,6 @@ fetch("houses.json")
                   </div>
                 </div>
               </div>
-              </div>
 
 
               <div id="rightside">
@@ -73,7 +72,7 @@ fetch("houses.json")
 
 
 
-                `;
+              </div>`;
         });
     document.getElementById("realest").innerHTML = div;
     document.getElementById("overlaydivs").innerHTML = listinginfo;
