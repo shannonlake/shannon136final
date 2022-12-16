@@ -8,7 +8,7 @@ mint: #6DEDD6
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
 body {
-  background-color: #e3e3e3;
+  /* background-color: #e3e3e3; */
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   margin: 0;
@@ -40,7 +40,7 @@ body {
       margin: 0;
     }
 
-    .name {
+    .name a{
       display: block;
       color: #235278;
       text-align: center;
@@ -51,6 +51,10 @@ body {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
       float: left;
+    }
+
+    li a {
+      text-decoration: none;
     }
 
     .overlayname {
@@ -71,9 +75,10 @@ body {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #e3e3e3;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      /* background-color: #e3e3e3; */
+      border-bottom: 1px solid #e3e3e3;
 
+      /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     }
 
     li {
@@ -81,7 +86,7 @@ body {
       float: left;
     }
 
-    li a {
+    .navlinks {
       display: block;
       color: #235278;
       text-align: center;
@@ -89,7 +94,7 @@ body {
       text-decoration: none;
     }
 
-    li a:hover:not(.active) {
+    .navlinks:hover:not(.active) {
       background-color: #235278;
       color: #e3e3e3;
       text-decoration: none;
@@ -141,6 +146,19 @@ body {
     color: white;
     border: none;
     margin-bottom: 6px;
+    }
+
+    .sidebtn {
+      background-color:white;
+      color:  #235278;
+      border: none;
+      margin-bottom: 6px;
+    }
+
+    .sidebtn:hover {
+      background-color: #6DEDD6;
+      color: #235278;
+      border: none;
     }
 
     .listingbtn:hover {
@@ -341,6 +359,36 @@ position: absolute;
  float: left;
 }
 
+.sidebar {
+}
+
+.mortpage {
+  width: 80%;
+  margin: auto;
+}
+
+.city {
+  width: 80%;
+}
+
+.right-cell {
+  width: 100%;
+}
+
+.sidebar{
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 5%;
+  background-color: #235278;
+
+}
+
+.mortcalc {
+width: 60%;
+display:block;
+}
+
 
 @media (max-width: 768px) {
 
@@ -363,13 +411,28 @@ margin: 20px;
 
 @media (max-width: 842px) {
 
+  .mortpage {
+    width: 80%;
+    margin: auto;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
   .name {
     display: block;
     float: none;
+    padding: 0;
   }
 
 .headnav {
   align-items: center;
+}
+
+.mortcalc {
+width: 100%;
+display:block;
 }
 
   li {
@@ -411,6 +474,10 @@ margin: 20px;
   float:none;
   display: block;
   text-align: center;
+}
+.mortpage {
+  width: 100%;
+  margin: auto;
 }
 
 }

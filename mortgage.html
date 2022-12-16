@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Morgage Calculator</title>
+<title>Regstration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+
+<style type="text/css">
+h1
+     {
+      text-align: center;
+     }
+
+     #yourEst {
+       display: none;
+     }
+</style>
+<style type="text/css"></style>
+</head>
+<body>
+  <header>
+  <a href="#main" class="skip">Skip to main content</a>
+  </header>
+
+  <div class="headnav" class="mainleft">
+  <ul>
+    <li class="name"><a href="https://shannonlake.github.io/index.html">Real Estate New v122</a></li>
+    <div class="toplink">
+      <li><a href="https://shannonlake.github.io/contact.html" class="navlinks">Contact</a></li>
+      <li><a href="https://unsplash.com/" class="navlinks">Images</a></li>
+      <li><a href="https://shannonlake.github.io/mortgage.html" class="navlinks">Mortgage</a></li>
+    </div>
+
+  </ul>
+  </div>
+
+
+<h3></h3>
+
+  <div class="row mortpage">
+    <div class="col col-md-8">
+
+      <div class="mortcalc ">
+        <div class="mortcal-header">
+          <h1>Your Mortgage Estimate</h1>
+          <p>Use our Real Estate home loan calculator to quickly estimate your total mortgage payment including down payment and interest rates.
+            Enter the price of a home and down payment amount to calculate your estimated mortgage payment.
+            Adjust the loan details until you find a payment within your range.</p>
+        </div>
+        <form class="">
+              <div class="rw-box">
+
+                <label class="left-cell" for="homeval"> Home Value: </label>
+                <input id="homeval" class="right-cell" type="number" step="any" name="homeval" placeholder="300000" size="10" tabindex="1">
+
+              </div>
+
+              <div class="rw-box">
+                <label class="left-cell" for="downpayment"> Down payment: </label>
+                <input id="downpayment" class="right-cell" type="number" step="any" name="downpayment"  placeholder="10000" size="10" tabindex="2">
+              </div>
+
+
+              <div class="rw-box">
+                <label class="left-cell" for="intrstsrate"> Interest Rate: </label>
+                <input type="number" step="any" id="intrstsrate" class="right-cell" name="intrstrate" placeholder="2.75" size="4" tabindex="3">
+              </div>
+
+              <div class="rw-box">
+                <label class="left-cell" for="loanterm"> Loan Term Years: </label>
+                <input id="loanterm" class="right-cell" type="number" step="any" name="loanterm" placeholder="30" size="4" tabindex="4">
+              </div>
+
+              <div class="rw-box" style="margin-top:20px;">
+                <input type="button" tabindex="10" value="Calculate" class="btn btn-primary listingbtn" name="cal" onclick="calcMort()">
+              </div>
+          </form>
+
+          <h3 id="yourEst">Your Estimate:</h3>
+          <div id="mortgageEstimate">
+          </div>
+      </div>
+
+
+    </div>
+    <div class="col-md-4 sidebar align-middle">
+      <h1>Contact Us Today!</h1>
+      <h3>Get qualified for a loan.</h3>
+      <p>Request a lender to contact you to get an accurate estimate of your monthly mortgage payment.</p>
+      <input id="city" style="margin-top:20px" class="city" name="city" placeholder="City" size="4" tabindex="5">
+      <input style="margin-top:20px;" type="button" tabindex="10" value="Get Qualified" class="btn btn-primary sidebtn" name="cal">
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+  function calcMort(){
+    var homeval = document.getElementById("homeval").value;
+    var downpayment = document.getElementById("downpayment").value;
+    var intrstsrate = document.getElementById("intrstsrate").value;
+    var loanterm = document.getElementById("loanterm").value;
+    var est = ((((homeval - downpayment) * (intrstsrate * .1) + (homeval - downpayment))/loanterm)/12 ).toFixed(2);
+
+    // var calc = (((homeval - downpayment * (intrstsrate * .1) + homeval - downpayment)/loanterm)/12 );
+
+
+    document.getElementById("mortgageEstimate").innerHTML = est;
+    document.getElementById("yourEst").style.display = "block";
+
+  }
+
+</script>
+
+    </body>
